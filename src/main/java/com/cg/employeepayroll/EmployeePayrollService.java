@@ -23,14 +23,13 @@ public class EmployeePayrollService {
     public void writeEmployeeDetailsToConsole(){
         System.out.println("Employee Details are written to the console\n"+employeeDetailsArrayList.toString());
     }
-     public static void main(String[] args) {
-         System.out.println("Welcome to employee payroll service");
-         EmployeePayrollService employeePayrollService=new EmployeePayrollService();
-         employeePayrollService.readEmployeeDetailsFromConsole();
-         employeePayrollService.writeEmployeeDetailsToConsole();
+    public static void main(String[] args) {
+        System.out.println("Welcome to employee payroll service");
+        EmployeePayrollService employeePayrollService=new EmployeePayrollService();
+        employeePayrollService.readEmployeeDetailsFromConsole();
+        employeePayrollService.writeEmployeeDetailsToConsole();
 
 
-     }
+    }
 
 }
-

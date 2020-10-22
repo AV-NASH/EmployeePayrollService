@@ -16,4 +16,5 @@ public class EmployeeDetails {
     public String toString() {
         return employeeID+" "+employeeName+" "+Salary;
     }
+
 }
