@@ -44,11 +44,12 @@ public class FileNIOTest {
         Files.list(Paths.get("C:\\Users\\Avinash\\IdeaProjects\\EmployeePayrollService\\src\\main\\java\\com\\cg\\employeepayroll\\NewFolder")).forEach(System.out::println);
         Files.newDirectoryStream(Paths.get("C:\\Users\\Avinash\\IdeaProjects\\EmployeePayrollService\\src\\main\\java\\com\\cg\\employeepayroll\\NewFolder")).forEach(System.out::println);
         Files.newDirectoryStream(Paths.get("C:\\Users\\Avinash\\IdeaProjects\\EmployeePayrollService\\src\\main\\java\\com\\cg\\employeepayroll\\NewFolder"),p->p.toFile().isFile()&&p.toString().startsWith("new")).forEach(System.out::println);
-
-
-
-
+        
     }
 
-
+    @Test
+    public void givenADirectoryWhenWatchedListsAUTheActivities() throws IOException {
+        Path dir= Paths. get( "C:\\Users\\Avinash\\IdeaProjects\\EmployeePayrollService\\src\\main\\java\\com\\cg\\employeepayroll");
+        Files. list(dir) . filter(Files::isRegularFile).forEach(System.out::println) ;
+    }
 }
