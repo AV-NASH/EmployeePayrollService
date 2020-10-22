@@ -20,6 +20,17 @@ public class EmployeePayrollServiceIO {
         }
 
     }
+    public  long readEmployeePayrollFromFile(){
+        Path path= Paths.get("C:\\Users\\Avinash\\IdeaProjects\\EmployeePayrollService\\src\\main\\java\\com\\cg\\employeepayroll\\Sample.txt");
+        long[] count = new long[1];
+        count[0]=0;
+        try {
+            Files.lines(path).forEach(p-> {System.out.println(p);
+            count[0]++;});
+        } catch (IOException e) {
+        }
+        return count[0];
+    }
 
     public long countEntires(){
         Path path=Paths.get("C:\\Users\\Avinash\\IdeaProjects\\EmployeePayrollService\\src\\main\\java\\com\\cg\\employeepayroll\\Sample.txt");

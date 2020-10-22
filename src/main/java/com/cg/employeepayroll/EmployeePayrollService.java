@@ -38,6 +38,12 @@ public class EmployeePayrollService {
         count=employeePayrollServiceIO.countEntires();
     }
 
+    public long readEmployeeDetailsFromFile(){
+        EmployeePayrollServiceIO employeePayrollServiceIO=new EmployeePayrollServiceIO();
+        return  employeePayrollServiceIO.readEmployeePayrollFromFile();
+
+    }
+
     public long getCount(){
         return  count;
     }

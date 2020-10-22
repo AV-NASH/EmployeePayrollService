@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.employeepayroll.EmployeePayrollServiceIOTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-22T18:23:36" hostname="AVINASH" time="0.382">
+<testsuite name="com.cg.employeepayroll.EmployeePayrollServiceIOTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-22T18:50:39" hostname="AVINASH" time="0.04">
   <properties/>
-  <testcase name="givenEmployeDetailsObjectAddItToFile" classname="com.cg.employeepayroll.EmployeePayrollServiceIOTest" time="0.382"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="whenGivenFilePrintContent" classname="com.cg.employeepayroll.EmployeePayrollServiceIOTest" time="0.035"/>
+  <testcase name="givenEmployeDetailsObjectAddItToFile" classname="com.cg.employeepayroll.EmployeePayrollServiceIOTest" time="0.004"/>
+  <system-out><![CDATA[1 jeff 40000
+1 elon 50000
+1 mark 30000
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
